@@ -4,6 +4,7 @@ class PythonPlayground(AppBase):
 
     def __init__(self, redis, logger, console_logger=None):
         """
+        add this row to check
         Each app should have this __init__ to set up Redis and logging.
         :param redis:
         :param logger:
