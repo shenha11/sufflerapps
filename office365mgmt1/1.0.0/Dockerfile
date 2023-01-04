@@ -1,5 +1,5 @@
 # Base our app image off of the WALKOFF App SDK image
-FROM shenha11/sufflerapps:app_sdk as base
+FROM frikky/shuffle:app_sdk as base
 
 # We're going to stage away all of the bloat from the build tools so lets create a builder stage
 FROM base as builder
