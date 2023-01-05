@@ -9,33 +9,6 @@ tags:
   - Firewall
 categories:
   - Network 
-#authentication:
-#  required: true
-#  parameters:
-#    - name: planType
-#      description: Enterprise, GCC , GCCHigh, DoD
-#      example: "Enterprise"
-#      required: true
-#      schema:
-#        type: string
-#    - name: tenantID
-#      description: xxxx-xxxx-xxxx-xxxx
-#      example: "xxxx-xxxx-xxxx-xxxx"
-#      required: true
-#      schema:
-#        type: string
-#    - name: clientID
-#      description: xxxx-xxxx-xxxx-xxxx
-#      example: "xxxx-xxxx-xxxx-xxxx"
-#      required: true
-#      schema:
-#        type: string
-#    - name: clientSecret
-#      description: xxxx-xxxx-xxxx-xxxx
-#      example: "*****"
-#      required: true
-#      schema:
-#        type: string
 
 actions:
   - name: run_o365poller
