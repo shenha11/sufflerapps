@@ -48,8 +48,8 @@ class PythonPlayground(AppBase):
 
         # These are functions
         switcher = {
-            "poll_10min" : self.run_me_1,
-            "poll_23hours" : self.run_me_2,
+            "option1_to_run": self.run_me_1,
+            "option2_to_run": self.run_me_2,
         }
 
         func = switcher.get(PollInterval, lambda: "Invalid function")
