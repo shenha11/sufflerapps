@@ -29,6 +29,7 @@ actions:
         options:
           - option1_to_run
           - option2_to_run
+          - option3_hello_world
         schema:
           type: string
     returns:

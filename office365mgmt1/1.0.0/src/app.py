@@ -36,6 +36,18 @@ class PythonPlayground(AppBase):
     def run_me_3(self, json_data):
         return "Ran function 3"
 
+    def hello_world(self):
+        """
+        Returns Hello World from the hostname the action is run on
+        :return: Hello World from your hostname
+        """
+        message = f"Hello World from in workflow !"
+
+        # This logs to the docker logs
+        self.logger.info(message)
+
+        return message
+
     # Write your data inside this function
     def run_o365poller(self, planType,tenantID,clientID,clientSecret, PollInterval,json_data):
         # It comes in as a string, so needs to be set to JSON
@@ -50,6 +62,7 @@ class PythonPlayground(AppBase):
         switcher = {
             "option1_to_run": self.run_me_1,
             "option2_to_run": self.run_me_2,
+            "option3_hello_world": self.hello_world,
         }
 
         func = switcher.get(PollInterval, lambda: "Invalid function")
