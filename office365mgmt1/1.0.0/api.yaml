@@ -1,5 +1,5 @@
 app_version: 1.0.0
-name: office365-tocheck
+name: python-tocheck
 description: Checkpoint firewall integration for shuffle222
 contact_info:
   name: "@shenhav"
