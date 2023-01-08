@@ -1,3 +1,5 @@
+from walkoff_app_sdk.app_base import AppBase
+
 class PythonPlayground(AppBase):
     __version__ = "1.0.0"
     app_name = "python-tocheck"  # this needs to match "name" in api.yaml
