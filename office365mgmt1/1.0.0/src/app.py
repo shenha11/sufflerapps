@@ -51,7 +51,7 @@ class PythonPlayground(AppBase):
         return message
 
     # Write your data inside this function
-    def run_o365poller(self,json_data):
+    def run_o365poller(self,PollInterval, json_data):
         # It comes in as a string, so needs to be set to JSON
         try:
             #json_data = json.loads(json_data)
@@ -68,7 +68,7 @@ class PythonPlayground(AppBase):
         }
 
         func = switcher.get(PollInterval, lambda: "Invalid function")
-        return func(planType,tenantID,clientID,clientSecret)
+        return func()
 
 if __name__ == "__main__":
     PythonPlayground.run()
